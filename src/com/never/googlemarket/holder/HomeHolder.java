@@ -3,6 +3,7 @@ package com.never.googlemarket.holder;
 import com.never.googlemarket.R;
 import com.never.googlemarket.utils.UIUtils;
 
+import android.graphics.Color;
 import android.view.View;
 import android.widget.TextView;
 
@@ -29,5 +30,6 @@ public class HomeHolder extends BaseHolder<String> {
 		// 拿到传递进来的数据，设置给控件
 		String string = getData();
 		home_item_text.setText(string);
+		
 	}
 }

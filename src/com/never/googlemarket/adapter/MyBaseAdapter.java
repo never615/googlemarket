@@ -42,11 +42,10 @@ public abstract class MyBaseAdapter<T> extends BaseAdapter {
 			//获取新创建的holder，创建view对象，查找控件findViewById
 			baseHolder=getHolder();
 		}
-		
 		//给holder填充数据
 		baseHolder.setData(list.get(position));
 		
-		return baseHolder.initView();
+		return baseHolder.getRootView();
 	}
 
 	/**

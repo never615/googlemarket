@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 
+import com.never.googlemarket.base.BaseFragment;
 import com.never.googlemarket.factory.FragmentFactory;
 import com.never.googlemarket.ui.weidget.PagerTab;
 import com.never.googlemarket.utils.UIUtils;
@@ -38,7 +39,9 @@ public class MainActivity extends BaseActivity {
 
 			@Override
 			public void onPageSelected(int arg0) {
-
+				BaseFragment baseFragment = (BaseFragment) FragmentFactory
+						.createFragment(arg0);
+				baseFragment.show();
 			}
 
 			@Override

@@ -31,4 +31,7 @@ public abstract class BaseHolder<T> {
 	 * 设置view的数据
 	 */
 	public abstract void setViewdata();
+	public View getRootView() {
+		return view;
+	}
 }
