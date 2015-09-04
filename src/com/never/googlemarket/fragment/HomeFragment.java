@@ -48,6 +48,7 @@ public class HomeFragment extends BaseFragment {
 
 
 	class MyAdapter extends MyBaseAdapter{
+		
 
 		public MyAdapter(List list) {
 			super(list);
